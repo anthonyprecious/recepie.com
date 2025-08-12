@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Receipe.com</title>
     <link rel="stylesheet" href="css/materialize.css">
+    <style>
+        .slider .indicators .indicator-item.active {
+            background-color: #e65100 !important;
+        }
+</style>
 </head>
 <body>
     <!-- header -->
@@ -29,13 +34,91 @@
                     <li><a class="white-text " href=""><strong>Customers</strong></a></li>
             </ul>
         </nav>
+        <div class="slider">
+            <ul class="slides">
+                <li><img class="responsive-img" src="img/cake_fruit.jpg" alt=""></li>
+                <li><img class="responsive-img" src="img/shrimp_soup.jpg" alt=""></li>
+                <li><img class="responsive-img" src="img/chicken_3.jpg" alt=""></li>
+                <li><img class="responsive-img" src="img/dessert_chocolate.jpg" alt=""></li>
+                <li><img class="responsive-img" src="img/ginger_cake.webp" alt=""></li>
+            </ul>
+        </div>
+        
+        
     </head>
     <main>
-        <!-- home -->
-        <!-- customer comments -->
+        <div class="container">
+            <h1 class="orange-text text-darken-4"> Hello dear foodies!</h1>
+            <p class="flow-text">You smart,you loyal,you a genius. You see the hedges,how i got it shaped up? It's important you shape up your hedges,it's like getting a haircut,stay fresh. i'm giving you cloth talk,cloth.Special cloth alert,cut from a special cloth. In life there will be road blocks but we will overcome it.In life life you have to take the trash out,if you have trash in life,take it out,throw it away, get rid of it,major key.
+            </p>
+        </div>
+        
+        <div id="about" class="container">
+            <hr class="section">
+            <div class="row">
+            <div class="col s12 l4">
+                                <ul class="collapsible">
+                                    <li>
+                                        <div class="collapsible-header deep-orange white-text">
+                                            Soups
+                                        </div>
+                                        <div class="collapsible-body "> 
+                                            <img class="responsive-img" src="img/cake.jpg" alt="" ">
+                                            <p>i'm giving you cloth talk,cloth.Special cloth alert,cut from a special cloth.it's on how you want to leave your life</p>
+                                            <button class=" btn deep-orange white-text z-depth-0">All Chicken Receipe</button>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div> 
+                    <div class="col s12 l4">
+                                <ul class="collapsible">
+                                    <li>
+                                        <div class="collapsible-header deep-orange white-text">
+                                            Soups
+                                        </div>
+                                        <div class="collapsible-body "> 
+                                            <img class="responsive-img" src="img/mexican_soup.webp" alt="" ">
+                                            <p>The key sucess is to keep your head above the water,never give up. The key is to drink fresh coconut water. Seciail cloth talk</p>
+                                            <button class=" btn deep-orange white-text z-depth-0">All Chicken Receipe</button>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div> 
+
+                            <div class="col s12 l4">
+                    <ul class="collapsible">
+                        <li>
+                            <div class="collapsible-header deep-orange white-text">
+                                Chicken
+                            </div>
+                            <div class="collapsible-body white-text"> 
+                                <img class="responsive-img" src="img/chicken_8.webp" alt="" >
+                                <p>A major key,never panic. don't panic when it gets crazy and rough,don't panic,stay calm.The key to some fresh milk</p>
+                                <button class="" btn deep-orange white-text z-depth-0"">All Chicken Receipe</button>
+                            </div>
+                        </li>
+                    </ul>     
+                </div>
+            </div>
+        </div>
+        <hr class="section"> 
+
+        <div>
+        <h3 class="deep-orange-text text-darken-4 center-align">What Our Customers say...</h3>
+        st
+        </div>
+
+            <!-- home -->
+            <section></section>
+
+            <!-- customer comments -->
+        <section></section>
         <!-- cakes -->
+        <section></section>
         <!-- soups -->
+        <section></section>
         <!-- chicken -->
+        <section></section>
     </main>
     <!-- footer -->
     <footer></footer>
@@ -45,7 +128,11 @@
     <script>
         $(document).ready(function(){
             $('.sidenav').sidenav();
-    
+            $('.slider').slider({
+                height:600,
+                indicator:true,
+            });
+            $('.collapsible').collapsible();
         });
     
     </script>
