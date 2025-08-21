@@ -49,7 +49,7 @@
     </header>
     <main>
         <!-- home -->
-        <section>
+        <section id="home">
             <div class="container">
             <h1 class="orange-text text-darken-4"> Hello dear foodies!</h1>
             <p class="flow-text">You smart,you loyal,you a genius. You see the hedges,how i got it shaped up? It's important you shape up your hedges,it's like getting a haircut,stay fresh. i'm giving you cloth talk,cloth.Special cloth alert,cut from a special cloth. In life there will be road blocks but we will overcome it.In life life you have to take the trash out,if you have trash in life,take it out,throw it away, get rid of it,major key.
@@ -112,7 +112,7 @@
 
 
             <!-- customer comments -->
-        <section>
+        <section id="customer">
             <div class="container">
             <h3 class="deep-orange-text text-darken-4 center-align">What Our Customers say...</h3>
             <ul class="collection">
@@ -162,8 +162,14 @@
 
         </section>
         <!-- cakes -->
-        <section>
-            <img class="responsive-img" src="img/cake.jpg" alt="" >
+        <section id="cakes">
+            <img class="responsive-img hide-on-med-and-up" src="img/cake.jpg" alt="">
+            <div class="parallax-container hide-on-small-only">
+                <div class="parallax">
+                    <img class="responsive-img" src="img/cake.jpg" alt="" >
+                </div>
+            </div>
+            
             <div>
             <div class="container">
             <h2 class="deep-orange-text text-darken-4  justify-align">Cakes</h2>
@@ -320,11 +326,14 @@
 
 
             <!-- soups -->
-        <section>
-                        <img class="responsive-img" src="img/soup.jpg" alt="">           
-            <div>
+        <section id="soups">
+            <img class="responsive-img hide-on-med-and-up" src="img/soup.jpg" alt="">
+        
+            <div class="parallax-container hide-on-small-only">
+                <div class="parallax"><img class="responsive-img" src="img/soup.jpg" alt=""></div>
+            </div>
             <div class="container">
-            <h2 class="deep-orange-text text-darken-4  justify-align">Soup</h2>
+            <h2 class="deep-orange-text text-darken-4  justify-align">Soups</h2>
                 <p class="flow-text">When you belive you will succed.The first of the month is coming, we have to get money,we have no choice.It cost money to eat and they don't want you to eat.Surround yourself with angels,positive energy,beautiful people,beautiful souls and a clean heart</p>
                 <div class="row">
                     <div class="col s12 l4">
@@ -476,8 +485,13 @@
         </section>
 
         <!-- chicken -->
-        <section>
-                        <img class="responsive-img" src="img/chicken.jpg" alt="">           
+        <section id="chicken">
+        <img class="responsive-img hide-on-med-and-up" src="img/chicken.jpg" alt="">
+            <div class="parallax-container hide-on-small-only">
+                <div class="parallax">
+                    <img class="responsive-img" src="img/chicken.jpg" alt=""> 
+                </div>
+            </div>
             <div>
             <div class="container">
             <h2 class="deep-orange-text text-darken-4  justify-align">Chicken</h2>
@@ -635,6 +649,7 @@
     <!-- footer -->
 </div>
 <footer class="black page-footer">
+    <div class="container">
     <div class="row">
         <div class="col s12 l4 m4">
             <a href=""><img class="responsive-img" src="img/logo.png" alt="" width="150px"></a>
@@ -646,7 +661,7 @@
         </div>
         <div class="col s12 l4 m6"></div>
         <div class="col s12 l4 m4">
-            <h4 class="deep-orange-text">QUICKLINKS</h4>
+            <h4 class="deep-orange-text">Quick Links</h4>
             <p>
                 <ul>
                 <li><a class="white-text" href="#top"> Bck to top</a></li>
@@ -654,12 +669,14 @@
                 <li><a class="white-text" href="£Soups">Soups</a> </li>
                 <li><a class="white-text" href="£chicken">chicken</a></li>
                 <li><a class="white-text" href="£Customers">Customers</a></li>
-                <li><a class="deep-orange white-text center-align">&copy 2025 Receipe.com COTE-TECH</a></li>
                 </ul>
             </p>
         </div>
     </div>
-    <div>
+    </div>
+    <div class="footer-copyright orange darken-4">
+        <div class="container center-align">&copy 2025 Receipe.com | CORE-TECH</div>
+        
     </div>
 </footer>
 
@@ -675,6 +692,7 @@
                 indicator:true,
             });
             $('.collapsible').collapsible();
+            $('.parallax').parallax();
         });
     
     </script>
